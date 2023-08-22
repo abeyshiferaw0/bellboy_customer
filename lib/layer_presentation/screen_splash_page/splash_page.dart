@@ -1,5 +1,3 @@
-
-
 import 'package:bellboy_customer/gen/assets.gen.dart';
 import 'package:bellboy_customer/theme/app_colors.dart';
 import 'package:bellboy_customer/theme/app_sizes.dart';
@@ -15,57 +13,21 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
-
   @override
   void initState() {
-
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          // Container(
-          //   width: double.infinity,
-          //   color: Colors.black.withOpacity(0.05),
-          // ),
-
-          Opacity(
-            opacity: 0.05,
-            child: SvgPicture.asset(
-              Assets.icons.light,
-              height: 100.h,
-              fit: BoxFit.cover,
-            ),
-          ),
-
-          Align(
-            alignment: Alignment.center,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SvgPicture.asset(
-                  Assets.icons.light,
-                  width: AppSizes.icon_size_16,
-                  fit: BoxFit.cover,
-                ),
-                SizedBox(
-                  width: AppSizes.mp_w_6,
-                ),
-                Text(
-                  "QUIZ BET".toUpperCase(),
-                  style: Theme.of(context).textTheme.headlineLarge!.copyWith(
-                    color: AppColors.black,
-                    fontSize: AppSizes.font_14 * 2,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
+      backgroundColor: AppColors.primary,
+      body: Center(
+        child: Image.asset(
+          Assets.logos.bellboyLogoWhite.path,
+          width: AppSizes.icon_size_32,
+          fit: BoxFit.cover,
+        ),
       ),
     );
   }
