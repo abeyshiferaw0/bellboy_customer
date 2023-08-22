@@ -1,4 +1,5 @@
 import 'package:bellboy_customer/config/app_router.dart';
+import 'package:bellboy_customer/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
@@ -15,17 +16,8 @@ class MyApp extends StatelessWidget {
     return Sizer(
       builder: (context, orientation, deviceType) {
         return MaterialApp(
-          theme: ThemeData(
-            brightness: Brightness.light,
-
-            primaryColor: Colors.lightBlue[800],
-            fontFamily: 'Georgia',
-            textTheme: const TextTheme(
-              displayLarge: TextStyle(fontSize: 72, fontWeight: FontWeight.bold),
-              titleLarge: TextStyle(fontSize: 36, fontStyle: FontStyle.italic),
-              bodyMedium: TextStyle(fontSize: 14, fontFamily: 'Hind'),
-            ),
-          ),
+          onGenerateRoute: AppRouter.generateRoute,
+          theme: AppTheme.light,
           title: 'BellBoy',
           initialRoute: AppRouterPaths.splashRoute,
         );

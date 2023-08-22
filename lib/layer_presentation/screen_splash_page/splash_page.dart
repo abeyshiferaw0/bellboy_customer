@@ -1,9 +1,10 @@
 
 
-import 'package:bellboy_customer/theme/app_assets.dart';
+import 'package:bellboy_customer/gen/assets.gen.dart';
 import 'package:bellboy_customer/theme/app_colors.dart';
 import 'package:bellboy_customer/theme/app_sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:sizer/sizer.dart';
 
 class SplashPage extends StatefulWidget {
@@ -33,8 +34,8 @@ class _SplashPageState extends State<SplashPage> {
 
           Opacity(
             opacity: 0.05,
-            child: Image.asset(
-              AppAssets.tileBackgroundTwo,
+            child: SvgPicture.asset(
+              Assets.icons.light,
               height: 100.h,
               fit: BoxFit.cover,
             ),
@@ -45,8 +46,8 @@ class _SplashPageState extends State<SplashPage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset(
-                  AppAssets.appLogo,
+                SvgPicture.asset(
+                  Assets.icons.light,
                   width: AppSizes.icon_size_16,
                   fit: BoxFit.cover,
                 ),

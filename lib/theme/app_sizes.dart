@@ -28,18 +28,16 @@ class AppSizes {
   static final double mp_v_16 = ScreenUtil().isPhone() ? 16.h : 16.h * 0.7;
 
   ///for font sizes
-  static final double font_8 = ScreenUtil().isPhone() ? 8.sp : 4.sp;
-  static final double font_9 = ScreenUtil().isPhone() ? 9.sp : 4.5.sp;
   static final double font_10 = ScreenUtil().isPhone() ? 10.sp : 5.sp;
   static final double font_12 = ScreenUtil().isPhone() ? 12.sp : 6.sp;
   static final double font_14 = ScreenUtil().isPhone() ? 14.sp : 7.sp;
   static final double font_16 = ScreenUtil().isPhone() ? 16.sp : 8.sp;
   static final double font_18 = ScreenUtil().isPhone() ? 18.sp : 9.sp;
   static final double font_20 = ScreenUtil().isPhone() ? 20.sp : 10.sp;
-  static final double font_22 = ScreenUtil().isPhone() ? 22.sp : 11.sp;
   static final double font_24 = ScreenUtil().isPhone() ? 24.sp : 12.sp;
-  static final double font_26 = ScreenUtil().isPhone() ? 26.sp : 13.sp;
   static final double font_28 = ScreenUtil().isPhone() ? 28.sp : 14.sp;
+  static final double font_32 = ScreenUtil().isPhone() ? 32.sp : 16.sp;
+  static final double font_64 = ScreenUtil().isPhone() ? 64.sp : 32.sp;
 
   ///for icon sizes
   static final double icon_size_2 = ScreenUtil().isPhone() ? 2.w : 2.w * 0.7;
@@ -61,13 +59,9 @@ class AppSizes {
   static final double icon_size_32 = ScreenUtil().isPhone() ? 32.w : 32.w * 0.7;
 
   ///for shape radius
-  static final double radius_2 = ScreenUtil().isPhone() ? 2 : 2 * 1.2;
-  static final double radius_3 = ScreenUtil().isPhone() ? 3 : 3 * 1.2;
   static final double radius_4 = ScreenUtil().isPhone() ? 4 : 4 * 1.2;
-  static final double radius_5 = ScreenUtil().isPhone() ? 5 : 5 * 1.2;
-  static final double radius_6 = ScreenUtil().isPhone() ? 6 : 6 * 1.2;
-  static final double radius_7 = ScreenUtil().isPhone() ? 7 : 7 * 1.2;
   static final double radius_8 = ScreenUtil().isPhone() ? 8 : 8 * 1.2;
-  static final double radius_10 = ScreenUtil().isPhone() ? 10 : 10 * 1.2;
   static final double radius_12 = ScreenUtil().isPhone() ? 12 : 12 * 1.2;
+  static final double radius_16 = ScreenUtil().isPhone() ? 16 : 16 * 1.2;
+  static final double radius_20 = ScreenUtil().isPhone() ? 20 : 20 * 1.2;
 }

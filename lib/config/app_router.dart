@@ -13,7 +13,7 @@ class AppRouterPaths {
 }
 
 class AppRouter {
-  Route<dynamic> generateRoute(RouteSettings settings) {
+  static Route<dynamic> generateRoute(RouteSettings settings) {
     //BUILDER
     WidgetBuilder builder;
     //ROUTERS PATH SWITCH
