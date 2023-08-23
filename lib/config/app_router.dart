@@ -1,3 +1,4 @@
+import 'package:bellboy_customer/layer_presentation/screen_login_intro/screen_login_intro.dart';
 import 'package:bellboy_customer/layer_presentation/screen_splash_page/splash_page.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -20,7 +21,7 @@ class AppRouter {
     switch (settings.name) {
       case AppRouterPaths.splashRoute:
         //builder = (_) => const TestPage();
-        builder = (_) => const SplashPage();
+        builder = (_) => const ScreenLoginIntro();
         break;
       default:
         throw Exception('Invalid route: ${settings.name}');

@@ -16,13 +16,14 @@ dependencies:
 
   #FOR UI
   sizer: ^2.0.15
+  bot_toast: ^4.0.4
 
 
   #FOR STATE MANAGEMENT
   flutter_bloc: ^8.1.3
 
   #FOR UTIL
-  logger:
+  logger: ^2.0.1
   flutter_svg: ^1.1.6
 
 
@@ -32,8 +33,7 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^2.0.0
-  build_runner:
-  flutter_gen_runner:
+  flutter_asset_generator: ^1.0.2
 
 flutter:
 

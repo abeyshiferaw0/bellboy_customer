@@ -44,6 +44,7 @@ class AppTheme {
 //   );
 
   static final  ThemeData light = ThemeData.light().copyWith(
+    brightness: Brightness.dark,
     visualDensity: VisualDensity.adaptivePlatformDensity,
    colorScheme:ColorScheme(
      primary: AppColors.primaryDark,
@@ -62,6 +63,7 @@ class AppTheme {
      onBackground: AppColors.black,
 
      brightness: Brightness.light,
+
    ),
   );
 
