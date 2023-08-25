@@ -1,3 +1,4 @@
+import 'package:bellboy_customer/config/app_router.dart';
 import 'package:bellboy_customer/const/resource.dart';
 import 'package:bellboy_customer/layer_presentation/common/app_toasts.dart';
 import 'package:bellboy_customer/layer_presentation/common/buttons/button_primary_fill.dart';
@@ -57,8 +58,10 @@ class ScreenLoginIntro extends StatelessWidget {
                     padding: EdgeInsets.symmetric(horizontal: AppSizes.mp_w_4),
                     child: ButtonPrimaryFill(
                       buttonSizeType: ButtonSizeType.LARGE,
+                      isDisabled: false,
                       text: "Log in",
                       onTap: () {
+                        Navigator.of(context).pushNamed(AppRouterPaths.login);
                         AppToasts.showSuccess("Success toast message");
                       },
                     ),
@@ -69,7 +72,9 @@ class ScreenLoginIntro extends StatelessWidget {
                   ),
 
                   MaterialButton(
+
                     onPressed: () {},
+
                     child: Padding(
                       padding: EdgeInsets.symmetric(vertical: AppSizes.mp_v_2),
                       child: Center(

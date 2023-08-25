@@ -1,3 +1,4 @@
+import 'package:bellboy_customer/config/app_router.dart';
 import 'package:bellboy_customer/const/resource.dart';
 import 'package:bellboy_customer/theme/app_colors.dart';
 import 'package:bellboy_customer/theme/app_sizes.dart';
@@ -14,6 +15,11 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
+
+    Future.delayed(Duration(milliseconds: 1000),(){
+      Navigator.of(context).pushNamed(AppRouterPaths.loginIntro);
+    });
+
   }
 
   @override

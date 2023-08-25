@@ -4,20 +4,24 @@ import 'package:bellboy_customer/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class ButtonPrimaryFill extends StatelessWidget {
-  const ButtonPrimaryFill({Key? key, required this.buttonSizeType, required this.text, required this.onTap})
+  const ButtonPrimaryFill({Key? key, required this.buttonSizeType, required this.text, required this.onTap, required this.isDisabled})
       : super(key: key);
 
   final ButtonSizeType buttonSizeType;
   final String text;
   final VoidCallback onTap;
+  final bool isDisabled;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width:  buttonSizeType == ButtonSizeType.SMALL  ? null : double.infinity,
       child: ElevatedButton(
+
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.primary,
+          elevation: 0,
+          shadowColor: AppColors.grayLight,
+          backgroundColor: isDisabled ?AppColors.grayLighter:AppColors.primary,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(AppSizes.radius_8),
           ),

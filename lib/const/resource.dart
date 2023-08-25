@@ -613,9 +613,6 @@ class R {
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/strokesvg)
   static const String ASSETS_ICONS_STROKESVG = 'assets/icons/strokesvg';
 
-  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/success.svg)
-  static const String ASSETS_ICONS_SUCCESS_SVG = 'assets/icons/success.svg';
-
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/swapsvg)
   static const String ASSETS_ICONS_SWAPSVG = 'assets/icons/swapsvg';
 
@@ -668,6 +665,12 @@ class R {
 
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/uploadsvg)
   static const String ASSETS_ICONS_UPLOADSVG = 'assets/icons/uploadsvg';
+
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/user_off.svg)
+  static const String ASSETS_ICONS_USER_OFF_SVG = 'assets/icons/user_off.svg';
+
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/user_on.svg)
+  static const String ASSETS_ICONS_USER_ON_SVG = 'assets/icons/user_on.svg';
 
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/vestsvg)
   static const String ASSETS_ICONS_VESTSVG = 'assets/icons/vestsvg';

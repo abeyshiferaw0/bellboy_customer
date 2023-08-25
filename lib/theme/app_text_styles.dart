@@ -22,7 +22,7 @@ class AppTextStyles {
 
   ///CAPTION
   static final captionRegular = TextStyle(
-    fontSize: AppSizes.font_10,
+    fontSize: AppSizes.font_12,
     fontWeight: FontWeight.w400,
     color: AppColors.grayDark,
     fontFamily: 'Jost',
@@ -30,7 +30,7 @@ class AppTextStyles {
   );
 
   static final captionBold = TextStyle(
-    fontSize: AppSizes.font_10,
+    fontSize: AppSizes.font_12,
     fontWeight: FontWeight.w700,
     color: AppColors.black,
     fontFamily: 'Jost',
@@ -45,6 +45,7 @@ class AppTextStyles {
       fontFamily: 'Jost',
       letterSpacing: 0.0,
       decoration: TextDecoration.underline);
+
 
   static final bodySmallRegular = TextStyle(
     fontSize: AppSizes.font_12,
