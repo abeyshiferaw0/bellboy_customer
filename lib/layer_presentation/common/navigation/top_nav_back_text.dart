@@ -16,7 +16,7 @@ class TopNavBackText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(
-        horizontal: AppSizes.mp_w_4,
+        horizontal: AppSizes.mp_w_2,
       ),
       height: AppSizes.mp_v_6,
       child: Stack(

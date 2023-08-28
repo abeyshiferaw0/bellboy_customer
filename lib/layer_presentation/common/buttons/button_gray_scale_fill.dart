@@ -4,8 +4,8 @@ import 'package:bellboy_customer/theme/app_sizes.dart';
 import 'package:bellboy_customer/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
-class ButtonPrimaryFill extends StatelessWidget {
-  const ButtonPrimaryFill({Key? key, required this.buttonSizeType, required this.text, required this.onTap, required this.isDisabled})
+class ButtonGrayScaleFill extends StatelessWidget {
+  const ButtonGrayScaleFill({Key? key, required this.buttonSizeType, required this.text, required this.onTap, required this.isDisabled})
       : super(key: key);
 
   final ButtonSizeType buttonSizeType;
@@ -22,7 +22,7 @@ class ButtonPrimaryFill extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           elevation: 0,
           shadowColor: AppColors.grayLight,
-          backgroundColor: isDisabled ?AppColors.grayLighter:AppColors.primary,
+          backgroundColor: isDisabled ?AppColors.grayLighter:AppColors.blackLight,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(AppSizes.radius_8),
           ),

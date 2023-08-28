@@ -6,18 +6,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class TextInputLogin extends StatefulWidget {
-  const TextInputLogin({Key? key, required this.hint, this.isPassword})
+  const TextInputLogin(
+      {Key? key, required this.hint, this.isPassword, this.moreInstructions})
       : super(key: key);
 
   final String hint;
   final bool? isPassword;
+  final List<String>? moreInstructions;
 
   @override
   State<TextInputLogin> createState() => _TextInputLoginState();
 }
 
 class _TextInputLoginState extends State<TextInputLogin> {
-  TextEditingController _textEditingController = TextEditingController();
+  final TextEditingController _textEditingController = TextEditingController();
   bool _showClearButton = false;
   bool _isFocused = false;
 
@@ -116,10 +118,19 @@ class _TextInputLoginState extends State<TextInputLogin> {
                   padding: EdgeInsets.only(
                     top: AppSizes.mp_v_1,
                   ),
-                  child: buildHideUnhideButton(),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      checkHasMoreInstructions()
+                          ? buildMoreInstructions()
+                          : const SizedBox(),
+                      buildHideUnhideButton()
+                    ],
+                  ),
                 ),
               )
-            : SizedBox(),
+            : const SizedBox(),
       ],
     );
   }
@@ -129,6 +140,13 @@ class _TextInputLoginState extends State<TextInputLogin> {
       if (widget.isPassword!) {
         return true;
       }
+    }
+    return false;
+  }
+
+  bool checkHasMoreInstructions() {
+    if (widget.moreInstructions != null) {
+      return true;
     }
     return false;
   }
@@ -154,6 +172,25 @@ class _TextInputLoginState extends State<TextInputLogin> {
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  buildMoreInstructions() {
+    return Expanded(
+      child: Padding(
+        padding:  EdgeInsets.only(right: AppSizes.mp_w_4),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: List.generate(widget.moreInstructions!.length, (index) =>     Text(
+            widget.moreInstructions!.elementAt(index),
+            style: AppTextStyles.captionRegular.copyWith(
+              color: AppColors.grayDark,
+            ),
+          ),)
+,
+
+        ),
       ),
     );
   }

@@ -2,10 +2,12 @@ import 'package:bellboy_customer/config/app_router.dart';
 import 'package:bellboy_customer/layer_presentation/common/buttons/button_primary_fill.dart';
 import 'package:bellboy_customer/layer_presentation/common/forms/text_input_login.dart';
 import 'package:bellboy_customer/layer_presentation/common/navigation/top_nav_back_text.dart';
+import 'package:bellboy_customer/layer_presentation/screen_authentication/screen_login/widgets/dialog_find_email.dart';
 import 'package:bellboy_customer/theme/app_colors.dart';
 import 'package:bellboy_customer/theme/app_sizes.dart';
 import 'package:bellboy_customer/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:bellboy_customer/layer_data/models/enums.dart';
 
 class ScreenLogin extends StatelessWidget {
   const ScreenLogin({Key? key}) : super(key: key);
@@ -73,9 +75,13 @@ class ScreenLogin extends StatelessWidget {
                       children: [
                         MaterialButton(
                           onPressed: () {
-                            Navigator.pushNamed(
-                              context,
-                              AppRouterPaths.emailSentDone,
+                            showDialog(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return Center(
+                                  child: DialogFindEmail(),
+                                );
+                              },
                             );
                           },
                           child: Padding(
@@ -98,7 +104,12 @@ class ScreenLogin extends StatelessWidget {
                           ),
                         ),
                         MaterialButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(
+                              context,
+                              AppRouterPaths.findPassword,
+                            );
+                          },
                           child: Padding(
                             padding:
                                 EdgeInsets.symmetric(vertical: AppSizes.mp_v_2),

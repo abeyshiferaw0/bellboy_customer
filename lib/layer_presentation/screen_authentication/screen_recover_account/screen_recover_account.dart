@@ -1,4 +1,5 @@
 import 'package:bellboy_customer/const/resource.dart';
+import 'package:bellboy_customer/layer_data/models/enums.dart';
 import 'package:bellboy_customer/layer_presentation/common/buttons/button_primary_fill.dart';
 import 'package:bellboy_customer/theme/app_colors.dart';
 import 'package:bellboy_customer/theme/app_sizes.dart';
@@ -6,8 +7,8 @@ import 'package:bellboy_customer/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class ScreenEmailSentDone extends StatelessWidget {
-  const ScreenEmailSentDone({Key? key}) : super(key: key);
+class ScreenRecoverAccount extends StatelessWidget {
+  const ScreenRecoverAccount({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

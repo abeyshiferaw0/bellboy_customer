@@ -6,7 +6,8 @@ import 'package:bellboy_customer/layer_presentation/common/navigation/top_nav_cl
 import 'package:bellboy_customer/theme/app_colors.dart';
 import 'package:bellboy_customer/theme/app_sizes.dart';
 import 'package:bellboy_customer/theme/app_text_styles.dart';
-import 'package:bot_toast/bot_toast.dart';
+
+import 'package:bellboy_customer/layer_data/models/enums.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
@@ -23,7 +24,7 @@ class ScreenLoginIntro extends StatelessWidget {
             ///APP BAR
             TopNavCloseText(
               centerTitle: '',
-              rightText: '',
+              rightText: '', useHomeIcon: true,
             ),
 
             SizedBox(
@@ -73,7 +74,9 @@ class ScreenLoginIntro extends StatelessWidget {
 
                   MaterialButton(
 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, AppRouterPaths.termsOfUsage,);
+                    },
 
                     child: Padding(
                       padding: EdgeInsets.symmetric(vertical: AppSizes.mp_v_2),

@@ -699,9 +699,17 @@ class R {
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/zoomupsvg)
   static const String ASSETS_ICONS_ZOOMUPSVG = 'assets/icons/zoomupsvg';
 
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/img_finish_login.png)
+  static const String ASSETS_IMAGES_IMG_FINISH_LOGIN_PNG =
+      'assets/images/img_finish_login.png';
+
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/img_loginIntro.png)
   static const String ASSETS_IMAGES_IMG_LOGININTRO_PNG =
       'assets/images/img_loginIntro.png';
+
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/img_sent_email.png)
+  static const String ASSETS_IMAGES_IMG_SENT_EMAIL_PNG =
+      'assets/images/img_sent_email.png';
 
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/logos/bellboy_logo_default.png)
   static const String ASSETS_LOGOS_BELLBOY_LOGO_DEFAULT_PNG =

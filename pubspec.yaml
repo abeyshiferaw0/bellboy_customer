@@ -25,6 +25,8 @@ dependencies:
   #FOR UTIL
   logger: ^2.0.1
   flutter_svg: ^1.1.6
+  country_code_picker: ^3.0.0
+  otp_text_field: ^1.1.3
 
 
 
@@ -50,5 +52,5 @@ flutter:
           weight: 700
         - asset: assets/fonts/jost_medium.ttf
           weight: 500
-        - asset: assets/fonts/jost_regular.ttf
+        - asset: assets/fonts/jost_thin.ttf
           weight: 400
