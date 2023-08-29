@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
           navigatorObservers: [BotToastNavigatorObserver()],
           theme: AppTheme.light,
           title: 'BellBoy',
-          initialRoute: AppRouterPaths.splashRoute,
+          initialRoute: AppRouterPaths.mainPage,
         );
       },
     );

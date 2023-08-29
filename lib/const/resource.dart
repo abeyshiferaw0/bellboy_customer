@@ -699,6 +699,14 @@ class R {
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/zoomupsvg)
   static const String ASSETS_ICONS_ZOOMUPSVG = 'assets/icons/zoomupsvg';
 
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/image_bg_order_request_card.svg)
+  static const String ASSETS_IMAGES_IMAGE_BG_ORDER_REQUEST_CARD_SVG =
+      'assets/images/image_bg_order_request_card.svg';
+
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/image_main_package.png)
+  static const String ASSETS_IMAGES_IMAGE_MAIN_PACKAGE_PNG =
+      'assets/images/image_main_package.png';
+
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/img_finish_login.png)
   static const String ASSETS_IMAGES_IMG_FINISH_LOGIN_PNG =
       'assets/images/img_finish_login.png';

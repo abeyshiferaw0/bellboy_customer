@@ -1,16 +1,17 @@
-import 'package:bellboy_customer/layer_presentation/screen_authentication/screen_email_sent_successfully/screen_email_sent_successfully.dart';
-import 'package:bellboy_customer/layer_presentation/screen_authentication/screen_find_accounts_done/screen_find_accounts_done.dart';
-import 'package:bellboy_customer/layer_presentation/screen_authentication/screen_find_email_done/screen_find_email_done.dart';
-import 'package:bellboy_customer/layer_presentation/screen_authentication/screen_find_password/screen_find_password.dart';
-import 'package:bellboy_customer/layer_presentation/screen_authentication/screen_login/screen_login.dart';
-import 'package:bellboy_customer/layer_presentation/screen_authentication/screen_login_intro/screen_login_intro.dart';
-import 'package:bellboy_customer/layer_presentation/screen_authentication/screen_phone_number_verfication/screen_phone_number_verfication.dart';
-import 'package:bellboy_customer/layer_presentation/screen_authentication/screen_recover_account/screen_recover_account.dart';
-import 'package:bellboy_customer/layer_presentation/screen_authentication/screen_sign_up/screen_sign_up.dart';
-import 'package:bellboy_customer/layer_presentation/screen_authentication/screen_sign_up_done/screen_sign_up_done.dart';
-import 'package:bellboy_customer/layer_presentation/screen_authentication/screen_sign_up_user_name/screen_sign_up_user_name.dart';
-import 'package:bellboy_customer/layer_presentation/screen_splash_page/splash_page.dart';
-import 'package:bellboy_customer/layer_presentation/screen_authentication/screen_terms_of_usage/screen_terms_of_usage.dart';
+import 'package:bellboy_customer/layer_presentation/pages_authentication/screen_email_sent_successfully/screen_email_sent_successfully.dart';
+import 'package:bellboy_customer/layer_presentation/pages_authentication/screen_find_accounts_done/screen_find_accounts_done.dart';
+import 'package:bellboy_customer/layer_presentation/pages_authentication/screen_find_email_done/screen_find_email_done.dart';
+import 'package:bellboy_customer/layer_presentation/pages_authentication/screen_find_password/screen_find_password.dart';
+import 'package:bellboy_customer/layer_presentation/pages_authentication/screen_login/screen_login.dart';
+import 'package:bellboy_customer/layer_presentation/pages_authentication/screen_login_intro/screen_login_intro.dart';
+import 'package:bellboy_customer/layer_presentation/pages_authentication/screen_phone_number_verfication/screen_phone_number_verfication.dart';
+import 'package:bellboy_customer/layer_presentation/pages_authentication/screen_recover_account/screen_recover_account.dart';
+import 'package:bellboy_customer/layer_presentation/pages_authentication/screen_sign_up/screen_sign_up.dart';
+import 'package:bellboy_customer/layer_presentation/pages_authentication/screen_sign_up_done/screen_sign_up_done.dart';
+import 'package:bellboy_customer/layer_presentation/pages_authentication/screen_sign_up_user_name/screen_sign_up_user_name.dart';
+import 'package:bellboy_customer/layer_presentation/pages_authentication/screen_splash_page/splash_page.dart';
+import 'package:bellboy_customer/layer_presentation/pages_authentication/screen_terms_of_usage/screen_terms_of_usage.dart';
+import 'package:bellboy_customer/layer_presentation/pages_main/screen_main_page/screen_main_page.dart';
 import 'package:flutter/cupertino.dart';
 
 class ScreenArguments {
@@ -38,6 +39,10 @@ class AppRouterPaths {
   static const String findAccountsDone = '/find_accounts_done';
   static const String phoneNumberVerification = '/phone_number_verification';
   static const String findEmailDone = '/find_email_done';
+
+
+  ///MAIN PAGE
+  static const String mainPage = '/main_page';
 
 
 
@@ -88,8 +93,9 @@ class AppRouter {
       case AppRouterPaths.findEmailDone:
         builder = (_) => const ScreenFindEmailDone();
         break;
-
-
+      case AppRouterPaths.mainPage:
+        builder = (_) => const ScreenMainPage();
+        break;
       default:
         throw Exception('Invalid route: ${settings.name}');
     }

@@ -4,7 +4,7 @@ import 'package:bellboy_customer/layer_presentation/common/buttons/button_gray_s
 import 'package:bellboy_customer/layer_presentation/common/buttons/button_primary_fill.dart';
 import 'package:bellboy_customer/layer_presentation/common/forms/text_input_login.dart';
 import 'package:bellboy_customer/layer_presentation/common/navigation/top_nav_close_text.dart';
-import 'package:bellboy_customer/layer_presentation/screen_authentication/screen_login/widgets/dialog_find_email.dart';
+import 'package:bellboy_customer/layer_presentation/pages_authentication/screen_login/widgets/dialog_find_email.dart';
 import 'package:bellboy_customer/theme/app_colors.dart';
 import 'package:bellboy_customer/theme/app_sizes.dart';
 import 'package:bellboy_customer/theme/app_text_styles.dart';

@@ -16,9 +16,9 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     super.initState();
 
-    Future.delayed(Duration(milliseconds: 1000),(){
-      Navigator.of(context).pushNamed(AppRouterPaths.loginIntro);
-    });
+    // Future.delayed(Duration(milliseconds: 1000),(){
+    //   Navigator.of(context).pushNamed(AppRouterPaths.loginIntro);
+    // });
 
   }
 
