@@ -13,7 +13,7 @@ class AppTextStyles {
   );
 
   static final menuBold = TextStyle(
-    fontSize: AppSizes.font_8,
+    fontSize: AppSizes.font_10,
     fontWeight: FontWeight.w700,
     color: AppColors.black,
     fontFamily: 'Jost',

@@ -12,7 +12,7 @@ class OrderRequestCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 42.h,
+      height: 40.h,
       width: double.infinity,
       decoration: BoxDecoration(
         color: AppColors.primary,
@@ -42,7 +42,7 @@ class OrderRequestCard extends StatelessWidget {
             Align(
               alignment: Alignment.bottomLeft,
               child: SizedBox(
-                height: 22.h,
+                height: 20.h,
                 width: double.infinity,
                 //    margin: EdgeInsets.all(AppSizes.mp_w_4),
                 //  decoration: BoxDecoration(
@@ -153,10 +153,10 @@ class OrderRequestCard extends StatelessWidget {
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(AppSizes.mp_w_2),
+                              padding: EdgeInsets.all(AppSizes.mp_w_4*0.7),
                               child: SvgPicture.asset(
                                 R.ASSETS_ICONS_SWAPSVG,
-                                width: AppSizes.icon_size_8,
+                                width: AppSizes.icon_size_6,
                                 color: AppColors.grayLighter,
                               ),
                             ),
@@ -175,7 +175,7 @@ class OrderRequestCard extends StatelessWidget {
               child: Image.asset(
                 R.ASSETS_IMAGES_IMAGE_MAIN_PACKAGE_PNG,
                 fit: BoxFit.cover,
-                height: 18.h,
+                height: 16.h,
               ),
             ),
             Positioned(
@@ -184,12 +184,27 @@ class OrderRequestCard extends StatelessWidget {
               child: Image.asset(
                 R.ASSETS_LOGOS_BELLBOY_LOGO_WHITE_PNG,
                 fit: BoxFit.cover,
-                height: 4.5.h,
+                height: 4.h,
               ),
             ),
           ],
         ),
       ),
+    );
+  }
+}
+
+
+class MiddleBottomBarItem extends StatelessWidget {
+  const MiddleBottomBarItem({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return FloatingActionButton(
+      onPressed: (){},
+      tooltip: 'Increment',
+      child:  Icon(Icons.add),
+      elevation: 4.0,
     );
   }
 }

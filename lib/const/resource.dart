@@ -699,6 +699,25 @@ class R {
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/zoomupsvg)
   static const String ASSETS_ICONS_ZOOMUPSVG = 'assets/icons/zoomupsvg';
 
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/bicycle-1.png)
+  static const String ASSETS_IMAGES_BICYCLE_1_PNG =
+      'assets/images/bicycle-1.png';
+
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/bicycle.png)
+  static const String ASSETS_IMAGES_BICYCLE_PNG = 'assets/images/bicycle.png';
+
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/bike-1.png)
+  static const String ASSETS_IMAGES_BIKE_1_PNG = 'assets/images/bike-1.png';
+
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/bike.png)
+  static const String ASSETS_IMAGES_BIKE_PNG = 'assets/images/bike.png';
+
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/car-1.png)
+  static const String ASSETS_IMAGES_CAR_1_PNG = 'assets/images/car-1.png';
+
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/car.png)
+  static const String ASSETS_IMAGES_CAR_PNG = 'assets/images/car.png';
+
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/image_bg_order_request_card.svg)
   static const String ASSETS_IMAGES_IMAGE_BG_ORDER_REQUEST_CARD_SVG =
       'assets/images/image_bg_order_request_card.svg';

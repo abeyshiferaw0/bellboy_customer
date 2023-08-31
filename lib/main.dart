@@ -40,6 +40,7 @@ class MyApp extends StatelessWidget {
           theme: AppTheme.light,
           title: 'BellBoy',
           initialRoute: AppRouterPaths.mainPage,
+          debugShowCheckedModeBanner: false,
         );
       },
     );
