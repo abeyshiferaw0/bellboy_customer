@@ -1,4 +1,5 @@
 import 'package:bellboy_customer/const/resource.dart';
+import 'package:bellboy_customer/layer_data/models/enums.dart';
 import 'package:bellboy_customer/theme/app_colors.dart';
 import 'package:bellboy_customer/theme/app_sizes.dart';
 import 'package:bellboy_customer/theme/app_text_styles.dart';
@@ -12,7 +13,7 @@ class OrderRequestCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40.h,
+      height: 36.h,
       width: double.infinity,
       decoration: BoxDecoration(
         color: AppColors.primary,
@@ -22,16 +23,18 @@ class OrderRequestCard extends StatelessWidget {
         ),
       ),
       child: Padding(
-        padding: EdgeInsets.symmetric(
-          horizontal: AppSizes.mp_w_4,
-          vertical: AppSizes.mp_v_4 * 0.8,
+        padding: EdgeInsets.only(
+          left: AppSizes.mp_w_4,
+          right: AppSizes.mp_w_4,
+          top: AppSizes.mp_v_4 * 0.8,
+          bottom: AppSizes.mp_v_4 * 0.6,
         ),
         child: Stack(
           children: [
             Align(
               alignment: Alignment.topRight,
               child: SizedBox(
-                height: 20.h,
+                height: 18.h,
                 width: double.infinity,
                 //  color: Colors.red,
                 child: const Column(
@@ -42,7 +45,7 @@ class OrderRequestCard extends StatelessWidget {
             Align(
               alignment: Alignment.bottomLeft,
               child: SizedBox(
-                height: 20.h,
+                height: 18.h,
                 width: double.infinity,
                 //    margin: EdgeInsets.all(AppSizes.mp_w_4),
                 //  decoration: BoxDecoration(
@@ -58,19 +61,40 @@ class OrderRequestCard extends StatelessWidget {
                 //  ),
                 child: Stack(
                   children: [
-                    SizedBox(
+                    Container(
                       height: double.infinity,
                       width: double.infinity,
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            BorderRadius.circular(AppSizes.radius_12 * 3),
+                        boxShadow: [
+                          BoxShadow(
+                            color: AppColors.blackLight.withOpacity(0.1),
+                            spreadRadius: 2,
+                            blurRadius: 6,
+                            offset: const Offset(0, 8),
+                          ),
+                        ],
+                      ),
                       child: SvgPicture.asset(
                         R.ASSETS_IMAGES_IMAGE_BG_ORDER_REQUEST_CARD_SVG,
                         fit: BoxFit.fill,
                       ),
                     ),
+
+                    // SizedBox(
+                    //   height: double.infinity,
+                    //   width: double.infinity,
+                    //   child: SvgPicture.asset(
+                    //     R.ASSETS_IMAGES_IMAGE_BG_ORDER_REQUEST_CARD_SVG,
+                    //     fit: BoxFit.fill,
+                    //   ),
+                    // ),
                     Padding(
                       padding: EdgeInsets.only(
-                        top: AppSizes.mp_v_4,
-                        left: AppSizes.mp_w_4*1.2,
-                        bottom: AppSizes.mp_v_1,
+                        top: AppSizes.mp_v_2,
+                        left: AppSizes.mp_w_4 * 1.2,
+                        bottom: AppSizes.mp_v_1 / 3,
                       ),
                       child: Row(
                         children: [
@@ -82,14 +106,14 @@ class OrderRequestCard extends StatelessWidget {
                               children: [
                                 SvgPicture.asset(
                                   R.ASSETS_ICONS_LOCATIONSVG,
-                                  width: AppSizes.icon_size_6,
+                                  width: AppSizes.icon_size_5,
                                   color: AppColors.grayDark,
                                 ),
                                 SizedBox(
                                   height: AppSizes.mp_v_1,
                                 ),
                                 SizedBox(
-                                  height: AppSizes.icon_size_6,
+                                  height: AppSizes.icon_size_5,
                                   child: VerticalDivider(
                                     color: AppColors.grayLight,
                                     thickness: 1.5,
@@ -101,7 +125,7 @@ class OrderRequestCard extends StatelessWidget {
                                 SvgPicture.asset(
                                   R.ASSETS_ICONS_FLAGROUNDEDSVG,
                                   color: AppColors.primary,
-                                  width: AppSizes.icon_size_6,
+                                  width: AppSizes.icon_size_5,
                                 ),
                               ],
                             ),
@@ -126,7 +150,7 @@ class OrderRequestCard extends StatelessWidget {
                                   height: AppSizes.mp_v_1,
                                 ),
                                 SizedBox(
-                                  height: AppSizes.icon_size_6,
+                                  height: AppSizes.icon_size_4,
                                 ),
                                 SizedBox(
                                   height: AppSizes.mp_v_1,
@@ -150,18 +174,21 @@ class OrderRequestCard extends StatelessWidget {
                               ),
                               border: Border.all(
                                 color: AppColors.grayLight,
+                                width: 1,
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(AppSizes.mp_w_4*0.7),
+                              padding: EdgeInsets.all(AppSizes.mp_w_4 * 0.5),
                               child: SvgPicture.asset(
                                 R.ASSETS_ICONS_SWAPSVG,
-                                width: AppSizes.icon_size_6,
+                                width: AppSizes.icon_size_6 * 0.8,
                                 color: AppColors.grayLighter,
                               ),
                             ),
                           ),
-                          SizedBox(width: AppSizes.mp_w_8,),
+                          SizedBox(
+                            width: AppSizes.mp_w_8,
+                          ),
                         ],
                       ),
                     ),
@@ -170,12 +197,12 @@ class OrderRequestCard extends StatelessWidget {
               ),
             ),
             Positioned(
-              right: 3.w,
-              top: 6.h,
+              right: 2.w,
+              top: 5.h,
               child: Image.asset(
                 R.ASSETS_IMAGES_IMAGE_MAIN_PACKAGE_PNG,
                 fit: BoxFit.cover,
-                height: 16.h,
+                height: 15.h,
               ),
             ),
             Positioned(
@@ -184,7 +211,7 @@ class OrderRequestCard extends StatelessWidget {
               child: Image.asset(
                 R.ASSETS_LOGOS_BELLBOY_LOGO_WHITE_PNG,
                 fit: BoxFit.cover,
-                height: 4.h,
+                height: 3.5.h,
               ),
             ),
           ],
@@ -194,16 +221,15 @@ class OrderRequestCard extends StatelessWidget {
   }
 }
 
-
 class MiddleBottomBarItem extends StatelessWidget {
   const MiddleBottomBarItem({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      onPressed: (){},
+      onPressed: () {},
       tooltip: 'Increment',
-      child:  Icon(Icons.add),
+      child: Icon(Icons.add),
       elevation: 4.0,
     );
   }

@@ -11,95 +11,111 @@ class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 10.5.h,
-      // color: AppColors.whiteOff,
-      child: Stack(
-        children: [
-          Align(
-            alignment: Alignment.bottomLeft,
-            child: Container(
-              height: 7.5.h,
-              color: AppColors.whiteOff,
-              child: Column(
-                children: [
-                  Divider(
-                    color: AppColors.grayLighter,
-                    height: 2,
-                    thickness: 2,
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Colors.transparent,
+            AppColors.whiteOff,
+          ],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          stops: [0.3,0.5],
+        ),
+      ),
+      child: SafeArea(
+        bottom: true,
+        top: false,
+        child: SizedBox(
+          height: 10.h,
+          // color: AppColors.whiteOff,
+          child: Stack(
+            children: [
+              Align(
+                alignment: Alignment.bottomLeft,
+                child: Container(
+                  height: 7.h,
+                  color: AppColors.whiteOff,
+                  child: Column(
+                    children: [
+                      Divider(
+                        color: AppColors.grayLighter,
+                        height: 2,
+                        thickness: 2,
+                      ),
+                      Expanded(
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            SizedBox(
+                              width: AppSizes.mp_w_6,
+                            ),
+                            buildMaterialButton(
+                              isSelected: true,
+                              iconPath: R.ASSETS_ICONS_HOME_SVG,
+                            ),
+                            SizedBox(
+                              width: AppSizes.mp_w_6 * 1.3,
+                            ),
+                            buildMaterialButton(
+                              isSelected: false,
+                              iconPath: R.ASSETS_ICONS_MEMOSVG,
+                            ),
+                            const Expanded(
+                              child: SizedBox(),
+                            ),
+                            buildMaterialButton(
+                              isSelected: false,
+                              iconPath: R.ASSETS_ICONS_SHOPPINGBAGSVG,
+                            ),
+                            SizedBox(
+                              width: AppSizes.mp_w_6 * 1.3,
+                            ),
+                            buildMaterialButton(
+                              isSelected: false,
+                              iconPath: R.ASSETS_ICONS_PROFILESVG,
+                            ),
+                            SizedBox(
+                              width: AppSizes.mp_w_6,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
-                  Expanded(
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SizedBox(
-                          width: AppSizes.mp_w_6,
-                        ),
-                        buildMaterialButton(
-                          isSelected: true,
-                          iconPath: R.ASSETS_ICONS_HOME_SVG,
-                        ),
-                        SizedBox(
-                          width: AppSizes.mp_w_6 * 1.3,
-                        ),
-                        buildMaterialButton(
-                          isSelected: false,
-                          iconPath: R.ASSETS_ICONS_MEMOSVG,
-                        ),
-                        const Expanded(
-                          child: SizedBox(),
-                        ),
-                        buildMaterialButton(
-                          isSelected: false,
-                          iconPath: R.ASSETS_ICONS_SHOPPINGBAGSVG,
-                        ),
-                        SizedBox(
-                          width: AppSizes.mp_w_6 * 1.3,
-                        ),
-                        buildMaterialButton(
-                          isSelected: false,
-                          iconPath: R.ASSETS_ICONS_PROFILESVG,
-                        ),
-                        SizedBox(
-                          width: AppSizes.mp_w_6,
-                        ),
-                      ],
+                ),
+              ),
+              Align(
+                alignment: Alignment.topCenter,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(400),
+                  child: Container(
+                    // width: AppSizes.icon_size_6,
+                    // height: AppSizes.icon_size_6,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [
+                          AppColors.primaryGradientStart,
+                          AppColors.primaryGradientMiddle,
+                          AppColors.primaryGradientEnd,
+                        ],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.all(AppSizes.mp_w_4 * 1.2),
+                      child: SvgPicture.asset(
+                        R.ASSETS_ICONS_ORDERSVG,
+                        width: AppSizes.icon_size_6,
+                        color: AppColors.whiteOff,
+                      ),
                     ),
                   ),
-                ],
-              ),
-            ),
+                ),
+              )
+            ],
           ),
-          Align(
-            alignment: Alignment.topCenter,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(400),
-              child: Container(
-                // width: AppSizes.icon_size_6,
-                // height: AppSizes.icon_size_6,
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      AppColors.primaryGradientStart,
-                      AppColors.primaryGradientMiddle,
-                      AppColors.primaryGradientEnd,
-                    ],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                  ),
-
-                ),
-                child: Padding(
-                  padding:  EdgeInsets.all(AppSizes.mp_w_4*1.2),
-                  child: SvgPicture.asset(
-                    R.ASSETS_ICONS_ORDERSVG,
-                    width: AppSizes.icon_size_6,
-                    color: AppColors.whiteOff,
-                  ),
-                ),
-              ),
-            ),
-          )
-        ],
+        ),
       ),
     );
   }
@@ -116,8 +132,8 @@ class BottomBar extends StatelessWidget {
       visualDensity: VisualDensity.compact,
       child: SvgPicture.asset(
         iconPath,
-        width: AppSizes.icon_size_6*1.1,
-        color: isSelected ?  AppColors.primary : AppColors.grayDark,
+        width: AppSizes.icon_size_6 * 1.0,
+        color: isSelected ? AppColors.primary : AppColors.grayDark,
       ),
     );
   }

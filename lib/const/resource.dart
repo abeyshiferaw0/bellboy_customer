@@ -239,6 +239,14 @@ class R {
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/cropsvg)
   static const String ASSETS_ICONS_CROPSVG = 'assets/icons/cropsvg';
 
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/customer_center_off.svg)
+  static const String ASSETS_ICONS_CUSTOMER_CENTER_OFF_SVG =
+      'assets/icons/customer_center_off.svg';
+
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/customer_center_on.svg)
+  static const String ASSETS_ICONS_CUSTOMER_CENTER_ON_SVG =
+      'assets/icons/customer_center_on.svg';
+
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/customerservicesvg)
   static const String ASSETS_ICONS_CUSTOMERSERVICESVG =
       'assets/icons/customerservicesvg';
@@ -699,15 +707,8 @@ class R {
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/icons/zoomupsvg)
   static const String ASSETS_ICONS_ZOOMUPSVG = 'assets/icons/zoomupsvg';
 
-  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/bicycle-1.png)
-  static const String ASSETS_IMAGES_BICYCLE_1_PNG =
-      'assets/images/bicycle-1.png';
-
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/bicycle.png)
   static const String ASSETS_IMAGES_BICYCLE_PNG = 'assets/images/bicycle.png';
-
-  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/bike-1.png)
-  static const String ASSETS_IMAGES_BIKE_1_PNG = 'assets/images/bike-1.png';
 
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/bike.png)
   static const String ASSETS_IMAGES_BIKE_PNG = 'assets/images/bike.png';
@@ -721,6 +722,10 @@ class R {
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/image_bg_order_request_card.svg)
   static const String ASSETS_IMAGES_IMAGE_BG_ORDER_REQUEST_CARD_SVG =
       'assets/images/image_bg_order_request_card.svg';
+
+  /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/image_main_ad_bg.png)
+  static const String ASSETS_IMAGES_IMAGE_MAIN_AD_BG_PNG =
+      'assets/images/image_main_ad_bg.png';
 
   /// ![preview](file:///Users/abiyshiferaw/AndroidStudioProjects/bellboy_customer/assets/images/image_main_package.png)
   static const String ASSETS_IMAGES_IMAGE_MAIN_PACKAGE_PNG =

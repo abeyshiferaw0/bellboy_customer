@@ -46,6 +46,7 @@ class AppSizes {
   static final double icon_size_2 = ScreenUtil().isPhone() ? 2.w : 2.w * 0.7;
   static final double icon_size_4 = ScreenUtil().isPhone() ? 4.w : 4.w * 0.7;
   static final double icon_size_6 = ScreenUtil().isPhone() ? 6.w : 6.w * 0.7;
+  static final double icon_size_5 = ScreenUtil().isPhone() ? 5.w : 5.w * 0.7;
   static final double icon_size_7 = ScreenUtil().isPhone() ? 7.w : 7.w * 0.7;
   static final double icon_size_8 = ScreenUtil().isPhone() ? 8.w : 8.w * 0.7;
   static final double icon_size_10 = ScreenUtil().isPhone() ? 10.w : 10.w * 0.7;
